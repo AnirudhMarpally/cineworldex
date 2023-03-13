@@ -1,6 +1,5 @@
 package com.pkglobal.exception;
 
-import java.time.LocalDateTime;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
@@ -9,6 +8,11 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 public class RecordNotFoundException extends Exception {
 	
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 5230864204464213771L;
+
 	public RecordNotFoundException(String message) {
 		super(message);
 	}

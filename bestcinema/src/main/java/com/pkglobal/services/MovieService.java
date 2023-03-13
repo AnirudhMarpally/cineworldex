@@ -1,13 +1,11 @@
 package com.pkglobal.services;
 
 import java.util.List;
-import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.pkglobal.entities.Movie;
-import com.pkglobal.entities.Theatre;
 import com.pkglobal.exception.RecordNotFoundException;
 import com.pkglobal.repository.MovieRepository;
 

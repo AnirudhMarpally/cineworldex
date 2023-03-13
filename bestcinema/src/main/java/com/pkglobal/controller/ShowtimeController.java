@@ -1,7 +1,6 @@
  package com.pkglobal.controller;
 
 import java.util.List;
-import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -69,8 +68,8 @@ public class ShowtimeController {
     }
     
     @GetMapping("/Day/{day}")
-    public ResponseEntity<List<Showtime>> getShowsByDay(@PathVariable String day) 
-    		throws RecordNotFoundException{
+    public ResponseEntity<List<Showtime>> getShowsByDay(@PathVariable String day) throws RecordNotFoundException 
+    		{
     	return ResponseEntity.ok(showtimeService.getShowsByDay(day));
     }
     
